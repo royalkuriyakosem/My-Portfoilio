@@ -8,4 +8,4 @@ This repository contains the source code for my personal portfolio website. The 
 
 #### Key Features:
 - **Responsive Design**: The website is optimized for both desktop and mobile devices.
-- **HTML5, CSS3,
+- **HTML5, CSS3,**
