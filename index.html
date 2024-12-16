@@ -3,59 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio of Royal Kuriyakose M">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
+        <!-- Navbar Section -->
         <div class="navbar">
             <div class="name-logo">
                 <div class="logo">
-                    <img class="logo"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&s" alt="error">
+                    <img src="images/logo.png" alt="Logo">
                 </div>
-                <div class="name">
-                    Royal
-                </div>
+                <div class="name">Royal</div>
             </div>
             
             <div class="items">
-                <div class="item">Home</div>
-                <div class="item">Skills</div>
-                <div class="item">About</div>
-                <div class="item">Contact</div>
+                <a href="#home" class="item">Home</a>
+                <a href="#skills" class="item">Skills</a>
+                <a href="#about" class="item">About</a>
+                <a href="#contact" class="item">Contact</a>
             </div>
         </div>
         
-        <div class="intro">
-            <div class="intro-name">
-                <h1>
-                    Hi , I 'm Royal Kuriyakose M
-                </h1>   
+        <!-- Intro Section -->
+        <div class="intro" id="home">
+            <h1>Hi, I'm Royal Kuriyakose M</h1>
+            <div class="intro-image">
+                <img src="images/your-image.jpg" alt="Royal Kuriyakose M">
             </div>
-            <div>
-                <img class="display-picture"src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAxAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAECAwQGBwj/xABEEAABAwIDBAUJBQYEBwAAAAABAAIDBBEFEiEGMUFREyJhcZEUMkJSgaGxwdEHIyRy8BUzQ1Ni4TVzgvElY4OSk6LC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEDAgQF/8QAIhEAAwEAAgICAgMAAAAAAAAAAAECEQMhEjEEQRMyIlFh/9oADAMBAAIRAxEAPwD0bKnypJwgYsqfKnSQA1krJ06BDWTWUkkwGAT2TpwEgI2T2Tuc1jS97g1rRcuJ0A5rz/aX7RBRVD4cMFLM21g83dr7NPAlMDvi5rXDpHBpOgud6lZfPGMbSYpi0glq6p8jWO6uTq5O7Kt+Ebf7Q4fJZ1dJVxC1o6gNeHjle1x4oA94yprIDsjtfh209ORAehrGazU7zqN+o5hdEQkBUQmsrCFEhAELJEKVkxCBkbJWTpIAZMpWTJDGSTpIAQ3JwEykmISSSSAHSThJAhkk6SAHThMFJt+G/ggDnPtBqW02ydaS4B0hbG0X3knX3ArxhmEV2JzudTUj3w7wW6Bvt4r1P7S4W4k7B8ItmM1R0haPVHV99z4IyaZlOWRBjWCPqho+SxfI59FuKFXs8ZOyGMxMcWwxggaBztSgdRhWKU0gkdTv01OXcvfKuJpAOXcg9THEJXEt0PNc/wCevs618WGjyDC8Uq8MxGmr6cuiq4HX5A8weYPJfQ+ymOw7R4NHXwt6N2Ysli9R43ju107CuG2pwXDcQwWeojp2R1cDS9r2C1+YK3/Yvb9g1929byv/AOGn6rpivJHHyQ5eHoBCgQrCqnOtqtEhiolQdK1ZJcTpmTiFzrP5IA23Sus4mB6zeKczIGX3TXWd0yj0yQGm6SzdKkgemm6e6pa5TBTEWAp1AKV0ASSUbp0CHTpkkASCkNdAohWNNtUAclidHNPt1hVfmaYIXGAMO+4Y52bxPuWHaarjopJ6r9p1kTh1rinzs7tRY79wXReThuPGebiS1mvmixuQO27R7FlxmMMGR8hETz1mk6Fc912d0wt6BuE11RiFC+pqnQyxxtJc9jSw+0XQKsxupdI7yWjhfDe2eWoDAfFdTNhsEGEyQQAsZIQ0243XI0OCw1FPNSVDGSdG8G7r7xu3FR3X2dGNLo0R1c2IYRXRTUjqZ4gcS7Nmae4ol9izs+zNY61vxpFu6Nn69iwDB/I8Kr4qd5YZYHxtaHGwLhYb7oh9mFC+lEpha+KkEAa+N5veXMbn3DxVuKsObmhtazvHKp51VriqXnrBdGnERMTXeissuGwSTdK6MZx2IifNCiU9YjOIQGhrWp+h/pVxTJaxlPQpCBXXSujQKehSVt0kaBjaptTN01Ug9vrJGiYSSDm+sldqYmPdSuoJwgCYTjeogpwUCJqbN6quptKABe0c/kho6rq5mvc034gj+y5TEqvEpMbzCGJ1OZGMhfI1zmhztQbAd+p3fHr9o8OdimEyQxlomZaSIk2GZvAnhcXHtXJbNYlLKcQp6gDponC0Ehsb8u/eo2u9OrhrVhbiuJ49TU0tPVUlPKSLtkjcQQ6/Iju4rlKfaasoq4zYjS5XFha9sFrZRfUi+/XeujxHaOsgklgENawAEFrmh44bjy07Fy2J4l5A50roA6qn39IdSBz+im0mdCeHVxzurq6mwymc3PMC7reiBc/ILs8Hw6PDKJtMwDN5ziDfW1vgLLivsqpJ6uorccrQSXfdQlw331c73AD2r0J5VeOJns5OXlb6IPKpv1h3qbiq2H7xVIGq3VCg5WHzQoEIAgmUrJrIERs5KylZNZADWSTpIDDJMcsTzyF0Eo2zzyuOZ2W5RevdkpX9oQ3DcTo6dvRy+de63GfY73Aiymc2O7pDca709LmznrJji9HMOiicMylTi93J3mdGY3DRmTgqspAqSNloKldVAp7pgWAq1p9qpZ1iAOOipZWsfWCmj6x1zu4Cx1ATUt+hNpGuZ7WUc0rtGMGpPfZcTtFs/PWVXluGTiCuaLEnzZQOBXoE1OyfC5oHjM2WMtcOdwuF2fxN0j5MMxCS1fRnK5x/it9F3tFr9qjzy57RbgcvUcZjJ2kiaGSUzmkaGRsjSD7b39yE0WDVVXM2eucTruvovVsQibK3c1yEzQOa1kMLQJHODWAcSdyh+Rv0diifdB/Yx48jmgjAyxFtyODrbvAjxR16y4TQw4dQNpIjcNHWd6zje58Sf0Fmo692QNl1yjKX8yCR8veuyYczjOC68qbNr1CHz/aoieKUDo5GknhuKsph94O9GGDWR1QqZnthaXv0AFyr3BYMZaZKKQN320TWN4Y5Kcy2jO/G6Njg0vBJ0Gq3xvEkTXDcdQvMo8KrXPu2EixvdeiYaXCljbK3rAWVubjU+npw/D+Vyc1PzWGoqKclRvqoHoodJNdJAaCcUdeIDmuYdhdTJUOkG4rvJMOhlPW3hO3DoW+kjobOUwrDZaecvl5aLoYm9QLb5FH6ydtNG3TMEaJGMplsdTNAKxk5XEckkPRXVscLpN2g5rRBSWjE0wvfVrD8SrZOhqOs67HR2AI0IVZjTFXhjrJG0dK+Rup9YoHs5czOlOovYnvN1t2neY8NDL3LnAA8d6WA05hYWu9IXV1OIm237LMZrKuqmOG4a4x2/ezg2PcEHqtlfLqmCcVBpsQijEZl84TDhcfrij7nWr39pC0NIkJYTZw1Y5FSqnGE05eo4CLEZqHFJcOxNuWZjtTwI5g8jvuuhHRQFssTB5TK27Hu3sBGtuSt2rwikxQUlRPeOqp3WuwdaRnFvw14e1SoKR0pNVMOsdGN4ABc/F8dRXk/R08nyPKMKcKjkw6VxizOhlNnsJ4+sO3mmrITHFPe+SSovfsc5F2w6qmtj6SBkA3dNGf/AGC6WtObyGNHHBUMy3tqPBSiqnRyknKWDQuvYhSqGPlqGNj0zOeT3XQSJj8Sc6ZxIpA8iGMHR4HpHndYqBqjrIaiCqBMEzZCNCAdQnfHfQ7lzsD3U0wMZsRppoujheJI2yN9IKWGyroIxrlCfo2q0nkh9TXsp6yOE+nuTU6YbUmsx6LO+Rt8qsdJfKRuKaWFpyuWanC/FUP9iOZJSDbCySwTf+GRlRJbzlNssnrLLEtLAlhtmeqiqZAcsuTRCaNlW8ueaskNdZEzUTGvkiMd4w2+ZYWSSU9DLLGLvBJtzVM6J/YWpqt+QRuN+1XU0bZapjXOys3u7uSF4bK6aJskjMpO9HcKZmqZS4AgMIAPG+/4LCXZv6NdW4E25BDZZejeCd17eO79bluqWnUNJBHPePqg1ZI06PAa0gtdf0D9Of1XVJB+yrHRmjpSd3lbWDuJDkTjjyTi25CZHGowelkcD0kda0P72usUdqeqS7mFoQLlOWdzu1WuNgyT1SFXM3XMpgXjezsugCc8LaiWMvF48uo7z/srmgNiiF79S/ilh56SAO9UkfD6pRj7uP8AIPggBisszw27zuAzH2G/yV8h1WVtn1TGO3OJB8CgC+vLosOqpR+9ka6OP2k2Vfk4p4GRRNs1jAOwBV4k6Soiw2liaS6okY55A0axtnEn3DvK21jwbxE2cBcM42txQABnkc2X9BGsNkz0zmDVzdbcgf8AYoHUxPdIch9u9bqGaajp7RsdJn3lSa2sKOkp1hiAOzarPUxRuqGvc0Et4rO3EKsuAMBAvvWp8pJaS3rEJ54k1SohV1jIIxI5vVClS1bKyNske4LDjDnPo3jL6Kw7P4tSxUgZI4B40shy2tF+WIrxbOhKSjFIJmB7PNKdQxlvJf2c/FWhxDYxmN1tpqkPn6It6yyzPhob9GwGUpYW17qoyyGzjwWE+yrCsg6ju5DaMXgP5iiU/wC7f+UobSn7gd5V0R3suh6r0Ywo6T/6be+6DRnrIxg/WilJ4n6fVYX7G3+polAIIJsDxvZAMRYyolMUMjpOrYm17dxReqYZrtcXCIcBvcssoDY8oGQW3LqRAFYN03kldQVessE7Jo3W0fG4Cx9hBB7V0OJHLCwf1Bcy2oGH4xSufpHM4wvv2jT23HvXRYo7PRhzeBuEMCh7czLqqA5TZPRTiobY7xomP3crRyKANGFFxjc1u9spB7tPqrG9aFj/AOkfBU4S7L0zeJmJ9wUs2XDo+0j4/wBkAUzOWGSXovvPVa53gForX5ZHDkAhGIVIgYy+6Rwb4nVG4NJv0dJSWZHnYM0hAjaexuh96rqohFGSNC468z381gwnEg+WKljDnOAa57g243cOWpd4nki1e7qnqrKpV6NVDn2BJd6M4W38Az8xQSV33iOYYfwX+r6KVPsol0aC1qiQnJUbrGizDBjnSOoZWxNu4tI9y8+dhlaHAPhdv3jvXp57dyj0Mbj5oVY5XCw4PlfBXyKVN+ivDB0VFExzdQElddrdAkputO2ZSSRyLQ2Nxkldnld7lvwx2ac9y5+J8r3ZnNdr2I5gpd0x6p3KMLstT6C9X+5k/KhdKfwze8onVn8NJ3IdRj8KO8q5JFkfnFHsJFsOz+s5x+XyQHKj2EG+Fxjk4j33+axP7Gn6Hm3HuQ2obe4G9EaktYbvcADu01chtY6RrbxwSX4agZvH5rqRE5jbOCeXCJ3QPDJYi2YF19Cxwdw7kc2axWnxHC44KitgnqS3riN17adtigO2dTKzAKi1NNmfljIy3sCQCdDuVeFYbRCkikY0Odl0cNTe3NS5ObxaRfj4VSbD7I5oZi6JjnZH5dBdbcQD3hromOc/TQDW63YZTiDDqePL6AJ53OpVpb1m6X1VZerSFLHgOo5WxsdnAZIZSXN4g6KM8hNFCyJjnAS5dGk3sf7XVlUPJMUEzh9xWANLvVlbu9hG7u7Vtyts5pbmad44gjiFpvRAWtoMQqZ3uhYxjXZcrpH+Ogufcmfs55RNE6qqrsj/AIbGaE95PyRsEjQ3dbc79bkxcstasHLaeowQ4fT0VW2WPOXPu0uc7zT6PD836KorK14cYHOBkLiwH1iNw7CQibhnBB3Fc9jcT/2g5jT+8hbNGf62mx9wCFKn0adOn2UskEu4EG9iCukw1rmUTb73a+z9BAoWNqqyN8P8YAkdvFdPlyMDRuAsO5c9+yhWUycqJWQFdJMkgB7pJkkAUwy4fLcQ2fY2dl4Kbm04BIZYDjyQDY5jWYjjAy7qg/ALp5cvRus3gUZgwdJNSOBaZNFXG6jaRlc2y5WR0pqZQ2F5651AVzBUfyX+Ck7N+J1fTUdvOCIYdLFJTSNZubJ8guMZHUfySjuzJlinnhlGXpGBw7xv+PuWuOv5CuegmIiJDM/rSOFr8hyHJZpZXSuLIh5vnyclpqg54LGaC1i69rDsWe+VoZSRgkem/RnhvcV2o5TNJFG2IuLcrL6ni72oGaYwSvqMNLIXuNy3LmYe8DS/cV0Ao2ySZ6h5ml4Fx0HcEpejHUa0PdusNw7yhyn7NTbkG4bj5DGQ4kwQzAWztuY3AdvDhvCNxzNkyOa+7HagtIsdEPkpo+iMk4YW8dOqPHeVXFTCQg08ZgadzgMt/YtrMxGW9YXqfJ6mldBM0OY8WNiL9h7CsFNLVUrugqz0sQ8yotqRycOBHPd8FNvTA9fopowdSW2P6+isJYyPpXtDG33lxACWYBaHki41aeISDrlUtaRrCSGu1A3hUTVha1znOYQwke+3NIDa9zRogeO1EYbG/wDiRkgHsNvmE9RibGtzSPyhVNoKjGY2Pp2NbCXayyPHuCTaSGl2a9mIc+ad3AdXvP8AZHXBPS0sdJTMhiGgG/mVIhczelikhRsrsqiWpAVWSsrcqWVAFVklZlToA5jZE/8AFMW/z/kukkP3TlzOyP8AimLf5/yXSSfunpgjgNt8VqcIdBJRNaS++e65I7b4yTZsLNP6SV222cwpRTl8LZQ+4XJuxMMPVo2lYlJmi7D9qsanP7tv/bZdHhOIYrHUxVMpaAx18lrXG4hB6HF55AGx0rGD9diMxYiWtAmjFuNlvxYmdNUY5RvMYY45pXBrWEakk6Dt1Vjqt8ekkD2u/wCYC0fBAaeuomVdFUyxv6Fsoc90bc2U8Dble112c2KUcUHSvmjMZ1JLwAO+9lZV0TcrQUHTTC5ddnJgyt9pUDMxhyxs6UjcGuswd5+gQXFNq8CEgFJBJOQes6CMWPc69j8CieFzUeIAup6uGxFwC3I9vY5pN/DRaVy/sT4rS1osJklmD5yx7h5jGszZO4aALSC/pG9LIWngxxFz7AFJ9HNGy7bObbrFrst0wk6BhbBSPDrgk5ma668VswaHSZWWy+Oi5vb2tdTbMzkPDXSvZEL8s3W9wK2VEle8h76ZwYCA0dIN99+9DsXgqcTmiY6OJsMLs2V5uc269u74pUtWaOenuAHBsVr6enDaGOW2U2LnZWd9jb3BRoKTEpatsktRKIWuzSXcbOPILoI6MxNBMbCBxGq0RiJwyyDq+BCjPF4rTorl8npnf0T2ZH624oph+MU2FYeBL5t9FhqKJ0dnxjMzgtNJQR1EGSobe2tkqYs6CLNoYZ2Z2Mc5vDRI45H/AC3eCwRQshBjYMrQdFYAotjSNJxxv8l3gonHG/yXeCqyqBbqjQw0ftxo/hu8FCTaFjQXGF9gLnRPG3RKWNpjcMu8FPQwzxbUQytzRwvte24pliog1sRGX0ikjQwlsj/iuMf5/wAl0jpmTMkaNC3imSWjJyG2OJ4Zh7aZ2KQ9ICTlOUnVc2NtNl4xpSOP/SSSWYlNGautHG32zrfMoJP/ABj6ojhG1eDYpUiFlE4X4mMfVJJUUIjfLSDW0WKU2zmFitbSGRpLWhjQBvQODaqHaTB5fwwpmGboxmFy8huY7jpoUkk7hLh0tx2/PTDS1FFHIBIC5o0u0a+9PjdTh08FLDTvdC11RF0zns1Dc7SQLX5FJJcSfR1Xy0/YafPhNY5lMJTPFmF4nh2U27CLJscqG0lbiYjpYx+KdmJN83AcNNAEySpTeHRxQm+zg5a6to6iY0tVLT53XIjkIBKrk2px1tRIYsTmytA84Ndz5g8gmSU1dIvycUb6NEG3m0Ecbs76WUtyi8kOt9fVIWmH7Ra9pAqcOppjzjeWfEFJJVnko464o76Oz2V2hkxqOciIQsZYhjjmLmcHX0sb30XVUOkch5p0lpNt9kKSXoxg9Y95VjUkkhE1FySSAJxblY4dU9ySSYAGPfJ+cpkkkAf/2Q==" alt="">
-            </div>
-            
         </div>
-
-        <div class="skills">
+        
+        <!-- Skills Section -->
+        <div class="skills" id="skills">
             <h1>Skills</h1>
-            <br>
             <div class="skill-row">
-                <div class="skill-col"></div>
-                <div class="skill-col"></div>
-                <div class="skill-col"></div>
-                <div class="skill-col"></div>
-                <div class="skill-col"></div>  
+                <div class="skill-col">
+                    <img src="html-icon.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-col">
+                    <img src="css-icon.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-col">
+                    <img src="js-icon.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-col">
+                    <img src="react-icon.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="skill-col">
+                    <img src="node-icon.png" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-col">
+                    <img src="mongodb-icon.png" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-col">
+                    <img src="express-icon.png" alt="Express">
+                    <p>Express</p>
+                </div>
+                <div class="skill-col">
+                    <img src="python-icon.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-col">
+                    <img src="java-icon.png" alt="Java">
+                    <p>Java</p>
+                </div>
             </div>
-
-            <br>
-            
+        </div>
+        
+        <!-- About Section -->
+        <div class="about" id="about">
+            <h1>About Me</h1>
+            <p>Hello, I am Royal Kuriyakose M, a passionate web developer with skills in HTML, CSS, JavaScript, and other modern web technologies. Here are some of my qualifications:</p>
+            <div class="qualifications">
+                <div class="qualification">
+                    <h2>Bachelor of Science in Computer Science</h2>
+                    <p>University of XYZ, 2022</p>
+                </div>
+                <div class="qualification">
+                    <h2>Certified Web Developer</h2>
+                    <p>XYZ Institute, 2021</p>
+                </div>
+                <div class="qualification">
+                    <h2>Full Stack Web Development Bootcamp</h2>
+                    <p>ABC Academy, 2020</p>
+                </div>
+                <div class="qualification">
+                    <h2>Advanced JavaScript and Node.js</h2>
+                    <p>Online Course, 2023</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125724.73706786933!2d76.23861918352625!3d10.025272706832752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080db0ffffffff%3A0xe9cf5831273cce6!2sEdapally%20Metro%20Station!5e0!3m2!1sen!2sin!4v1734348311882!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </div>
-    
+    <script>
+        // Smooth Scroll for Navbar Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
