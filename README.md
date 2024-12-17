@@ -1,6 +1,4 @@
-Here’s an example description you can use for a portfolio repository on GitHub:
 
----
 
 ### Portfolio Repository
 
